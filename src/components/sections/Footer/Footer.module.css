@@ -1,9 +1,11 @@
 .footer {
-  padding: 6rem 0 3rem;
+  padding: 6rem 0 2rem;
+}
+
+.intro {
   max-width: var(--content-max-width);
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .eyebrow {
@@ -37,13 +39,9 @@
   color: var(--color-text-primary);
 }
 
-.socialLinks {
-  justify-content: center;
-  margin: 3rem 0 1.5rem;
-}
-
 .cvLink {
-  display: inline-block;
+  display: block;
+  margin-top: 1.5rem;
   text-decoration: none;
   font-family: var(--font-mono);
   font-size: 0.85rem;
@@ -55,9 +53,35 @@
   color: var(--color-accent);
 }
 
+.bottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
 .legal {
   color: var(--color-text-secondary);
   opacity: 0.6;
   font-size: 0.8rem;
   font-family: var(--font-mono);
+  margin: 0;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  .bottomBar {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
 }

@@ -59,24 +59,28 @@ export const translations = {
           description:
             'Backend de eventos asíncronos para software financiero interno: mensajería con RabbitMQ y Kafka, tareas en segundo plano con Arq, caché con Redis y actualizaciones en tiempo real vía PostgreSQL LISTEN/NOTIFY. Frontend en React con Redux y CoreUI.',
           tech: ['Python', 'FastAPI', 'RabbitMQ', 'Kafka', 'Redis', 'React', 'Redux'],
+          badge: 'En producción',
         },
         {
           title: 'Monitor de ECG — Sistemas Embebidos',
           description:
             'Sistema de monitoreo de electrocardiograma para un curso de sistemas embebidos: adquisición de señal, temporización no bloqueante y pantalla OLED sobre un ESP32-S3 (Arduino/C++), junto con una aplicación en Python (pyserial) para monitoreo de datos en tiempo real.',
           tech: ['C++', 'Arduino', 'ESP32-S3', 'Python', 'pyserial'],
+          badge: 'Escolar',
         },
         {
           title: 'Seguros Encinas — Sitio de correduría de seguros',
           description:
             'Sitio web construido desde cero para una correduría de seguros, organizando más de 8 líneas de producto —auto, transporte marítimo y terrestre, médico, vida, retiro, residencial, comercial y viajes— en una estructura clara y navegable, con llamadas a la acción pensadas para generar cotizaciones.',
           tech: ['React.js', 'HTML5', 'CSS3', 'JavaScript'],
+          link: 'https://segurosencinas.com',
         },
         {
           title: 'Morelos 508 — Landing de preventa inmobiliaria',
           description:
             'Sitio de marketing mobile-first construido desde cero para el desarrollo residencial de lujo de una constructora local, con un formulario de captación de leads para convertir visitantes en prospectos de venta.',
           tech: ['React.js', 'HTML5', 'CSS3', 'JavaScript'],
+          link: 'https://dsd.mx',
         },
       ],
     },
@@ -150,24 +154,28 @@ export const translations = {
           description:
             'Asynchronous, event-driven backend for internal financial software: messaging with RabbitMQ and Kafka, background tasks with Arq, Redis caching, and real-time updates via PostgreSQL LISTEN/NOTIFY. React frontend with Redux and CoreUI.',
           tech: ['Python', 'FastAPI', 'RabbitMQ', 'Kafka', 'Redis', 'React', 'Redux'],
+          badge: 'In production',
         },
         {
           title: 'ECG Monitor — Embedded Systems',
           description:
             'Electrocardiogram monitoring system built for an embedded systems course: signal acquisition, non-blocking timing, and an OLED display interface on an ESP32-S3 (Arduino/C++), paired with a Python (pyserial) app for real-time serial data monitoring.',
           tech: ['C++', 'Arduino', 'ESP32-S3', 'Python', 'pyserial'],
+          badge: 'School project',
         },
         {
           title: 'Seguros Encinas — Insurance Brokerage Website',
           description:
             'Website built from scratch for an insurance brokerage, organizing 8+ product lines — auto, marine and land transport, medical, life, retirement, residential, commercial, and travel insurance — into a clear, navigable structure with conversion-focused calls-to-action.',
           tech: ['React.js', 'HTML5', 'CSS3', 'JavaScript'],
+          link: 'https://segurosencinas.com',
         },
         {
           title: 'Morelos 508 — Real Estate Presale Landing Page',
           description:
             "Responsive, mobile-first marketing website built from scratch for a local construction company's luxury residential development, with a lead-capture form to convert visitors into sales inquiries.",
           tech: ['React.js', 'HTML5', 'CSS3', 'JavaScript'],
+          link: 'https://dsd.mx',
         },
       ],
     },

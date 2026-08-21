@@ -9,22 +9,44 @@
 }
 
 .card {
+  display: block;
   padding: 1.75rem;
   border-radius: 0.5rem;
   background: var(--color-bg-elevated);
   border: 1px solid var(--color-border);
+  text-decoration: none;
   transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
-.card:hover {
+a.card:hover {
   transform: translateY(-4px);
   border-color: var(--color-burgundy-hover);
   background: linear-gradient(180deg, var(--color-burgundy-dim), var(--color-bg-elevated) 60%);
 }
 
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
 .card h3 {
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+.badge {
+  flex-shrink: 0;
+  padding: 0.2rem 0.55rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-border);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
 }
 
 .card p {
