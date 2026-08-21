@@ -95,13 +95,6 @@
 
 @media (max-width: 900px) {
   .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 2rem 1.5rem;
-  }
-
-  .nav {
     display: none;
   }
 }

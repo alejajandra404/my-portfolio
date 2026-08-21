@@ -50,6 +50,13 @@ a {
   color: inherit;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 ::selection {
   background: var(--color-burgundy);
   color: var(--color-text-primary);
