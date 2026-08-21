@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: dark;
+
+  /* Paleta: dark navy + vino profundo + acento dorado */
+  --color-bg: #0a0e14;
+  --color-bg-elevated: #10151e;
+  --color-text-primary: #e4e8f1;
+  --color-text-secondary: #8b93a7;
+  --color-accent: #c9a24b;
+  --color-accent-dim: rgba(201, 162, 75, 0.15);
+  --color-burgundy: #6b1d33;
+  --color-burgundy-hover: #7f2440;
+  --color-border: #1e2530;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --content-max-width: 640px;
+  --sidebar-width: 380px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  line-height: 1.1;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--color-burgundy);
+  color: var(--color-text-primary);
+}

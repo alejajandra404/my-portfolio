@@ -1,0 +1,9 @@
+.about {
+  padding: 5rem 0;
+  max-width: var(--content-max-width);
+}
+
+.about p {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+}

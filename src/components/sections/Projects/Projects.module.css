@@ -1,0 +1,45 @@
+.projects {
+  padding: 5rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1.75rem;
+  border-radius: 0.5rem;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-accent);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  margin: 0.75rem 0 0;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
