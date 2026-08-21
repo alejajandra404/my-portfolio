@@ -1,4 +1,6 @@
 import Sidebar from './components/Sidebar/Sidebar'
+import MobileNavbar from './components/MobileNavbar/MobileNavbar'
+import Spotlight from './components/Spotlight/Spotlight'
 import Hero from './components/sections/Hero/Hero'
 import About from './components/sections/About/About'
 import Experience from './components/sections/Experience/Experience'
@@ -9,17 +11,21 @@ import styles from './App.module.css'
 
 function App() {
   return (
-    <div className={styles.layout}>
-      <Sidebar />
-      <main className={styles.content}>
-        <Hero />
-        <About />
-        <Experience />
-        <Stack />
-        <Projects />
-        <Footer />
-      </main>
-    </div>
+    <>
+      <Spotlight />
+      <MobileNavbar />
+      <div className={styles.layout}>
+        <Sidebar />
+        <main className={styles.content}>
+          <Hero />
+          <About />
+          <Experience />
+          <Stack />
+          <Projects />
+          <Footer />
+        </main>
+      </div>
+    </>
   )
 }
 

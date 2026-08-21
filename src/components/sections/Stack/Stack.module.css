@@ -28,7 +28,15 @@
   color: var(--color-text-secondary);
   font-family: var(--font-mono);
   font-size: 0.85rem;
-  padding: 0.25rem 0;
+  padding: 0.25rem 0.5rem;
+  margin-left: -0.5rem;
+  border-radius: 0.25rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.category li:hover {
+  background: var(--color-burgundy-dim);
+  color: var(--color-text-primary);
 }
 
 .bullet {

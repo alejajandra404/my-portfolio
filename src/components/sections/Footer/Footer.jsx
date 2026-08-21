@@ -1,32 +1,23 @@
+import SocialIcons from '../../SocialIcons/SocialIcons'
+import { useLanguage } from '../../../i18n/LanguageContext'
 import styles from './Footer.module.css'
 
 function Footer() {
+  const { t } = useLanguage()
+
   return (
     <footer id="contacto" className={styles.footer}>
-      <p className={styles.eyebrow}>05. Contacto</p>
-      <h2>Trabajemos juntos</h2>
-      <p className={styles.description}>{/* Placeholder: breve invitación a contactar */}</p>
-      <a href="mailto:" className={styles.emailCta}>
-        Escríbeme
+      <p className={styles.eyebrow}>{t.footer.eyebrow}</p>
+      <h2>{t.footer.heading}</h2>
+      <p className={styles.description}>{t.footer.description}</p>
+      <a href="mailto:alegarpre@gmail.com" className={styles.emailCta}>
+        {t.footer.emailCta}
       </a>
-      <ul className={styles.links}>
-        <li>
-          <a href="#" target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="/curriculum.pdf" download>
-            Descargar CV
-          </a>
-        </li>
-      </ul>
-      <p className={styles.legal}>Alejandra · Portafolio personal</p>
+      <SocialIcons className={styles.socialLinks} />
+      <a href="/curriculum.pdf" className={styles.cvLink} download>
+        {t.footer.cvLink}
+      </a>
+      <p className={styles.legal}>{t.footer.legal}</p>
     </footer>
   )
 }

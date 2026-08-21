@@ -1,0 +1,18 @@
+.social {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social a {
+  display: flex;
+  color: var(--color-text-secondary);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social a:hover {
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}

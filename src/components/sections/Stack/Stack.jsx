@@ -1,21 +1,15 @@
 import SectionHeading from '../../SectionHeading/SectionHeading'
+import { useLanguage } from '../../../i18n/LanguageContext'
 import styles from './Stack.module.css'
 
-const STACK_CATEGORIES = [
-  { title: 'Frontend', items: ['React.js', 'HTML5', 'Web Design'] },
-  { title: 'Backend', items: ['Python', 'FastAPI'] },
-  { title: 'Mobile', items: ['Kotlin', 'Jetpack Compose'] },
-  { title: 'Data / Infra', items: ['Firebase', 'Linux'] },
-  { title: 'Testing', items: ['Robot Framework'] },
-  { title: 'Herramientas', items: ['Git', 'Android Studio'] },
-]
-
 function Stack() {
+  const { t } = useLanguage()
+
   return (
     <section id="stack" className={styles.stack}>
-      <SectionHeading number="03" title="Stack Técnico" />
+      <SectionHeading number="03" title={t.stack.heading} />
       <div className={styles.grid}>
-        {STACK_CATEGORIES.map((category) => (
+        {t.stack.categories.map((category) => (
           <div key={category.title} className={styles.category}>
             <h3>{category.title}</h3>
             <ul>

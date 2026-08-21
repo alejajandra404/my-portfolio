@@ -32,27 +32,26 @@
 }
 
 .emailCta:hover {
-  background: var(--color-accent-dim);
+  background: var(--color-burgundy-dim);
+  border-color: var(--color-burgundy-hover);
+  color: var(--color-text-primary);
 }
 
-.links {
-  display: flex;
+.socialLinks {
   justify-content: center;
-  gap: 1.5rem;
-  list-style: none;
-  padding: 0;
   margin: 3rem 0 1.5rem;
+}
+
+.cvLink {
+  display: inline-block;
+  text-decoration: none;
   font-family: var(--font-mono);
   font-size: 0.85rem;
-}
-
-.links a {
-  text-decoration: none;
   color: var(--color-text-secondary);
   transition: color 0.2s ease;
 }
 
-.links a:hover {
+.cvLink:hover {
   color: var(--color-accent);
 }
 

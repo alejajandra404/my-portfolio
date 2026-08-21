@@ -1,12 +1,16 @@
 import SectionHeading from '../../SectionHeading/SectionHeading'
+import { useLanguage } from '../../../i18n/LanguageContext'
 import styles from './About.module.css'
 
 function About() {
+  const { t } = useLanguage()
+
   return (
     <section id="sobre-mi" className={styles.about}>
-      <SectionHeading number="01" title="Sobre mí" />
-      <p>{/* Placeholder: historia — formación en ITSON + experiencia real en AW IT */}</p>
-      <p>{/* Placeholder: hacia dónde vas — metas remotas, interés en empresas grandes */}</p>
+      <SectionHeading number="01" title={t.about.heading} />
+      <p>{t.about.paragraph1}</p>
+      <p>{t.about.paragraph2}</p>
+      <p>{t.about.paragraph3}</p>
     </section>
   )
 }

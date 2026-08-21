@@ -12,6 +12,7 @@
   --color-accent-dim: rgba(201, 162, 75, 0.15);
   --color-burgundy: #6b1d33;
   --color-burgundy-hover: #7f2440;
+  --color-burgundy-dim: rgba(107, 29, 51, 0.25);
   --color-border: #1e2530;
 
   --font-sans: 'Inter', system-ui, sans-serif;
@@ -52,4 +53,21 @@ a {
 ::selection {
   background: var(--color-burgundy);
   color: var(--color-text-primary);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-burgundy);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-burgundy-hover);
 }

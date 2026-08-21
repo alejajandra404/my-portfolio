@@ -16,6 +16,12 @@
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text-primary);
+  text-shadow: 0 0 24px transparent;
+  transition: text-shadow 0.3s ease;
+}
+
+.logo:hover {
+  text-shadow: 0 0 24px var(--color-burgundy-hover);
 }
 
 .role {
@@ -39,10 +45,11 @@
 }
 
 .nav a {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.6rem 0;
+  padding: 0.6rem 0 0.6rem 1rem;
   text-decoration: none;
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -53,9 +60,25 @@
   transition: color 0.2s ease;
 }
 
+.nav a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 0;
+  background: var(--color-burgundy-hover);
+  transition: height 0.2s ease;
+}
+
 .nav a:hover,
 .nav a.active {
   color: var(--color-accent);
+}
+
+.nav a.active::before {
+  height: 100%;
 }
 
 .navNumber {
@@ -63,24 +86,11 @@
   font-weight: 600;
 }
 
-.social {
+.footer {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1.25rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social a {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  text-decoration: none;
-  color: var(--color-text-secondary);
-  transition: color 0.2s ease;
-}
-
-.social a:hover {
-  color: var(--color-accent);
 }
 
 @media (max-width: 900px) {

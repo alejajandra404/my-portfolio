@@ -1,24 +1,18 @@
-import SocialIcons from '../SocialIcons/SocialIcons'
 import LanguageToggle from '../LanguageToggle/LanguageToggle'
 import { useActiveSection } from '../../hooks/useActiveSection'
 import { useLanguage } from '../../i18n/LanguageContext'
 import { NAV_LINKS } from '../../navLinks'
-import styles from './Sidebar.module.css'
+import styles from './MobileNavbar.module.css'
 
-function Sidebar() {
+function MobileNavbar() {
   const activeSection = useActiveSection(NAV_LINKS)
   const { t } = useLanguage()
 
   return (
-    <header className={styles.sidebar}>
-      <div>
-        <a href="#hero" className={styles.logo}>
-          Alejandra
-        </a>
-        <p className={styles.role}>{t.sidebar.role}</p>
-        <p className={styles.tagline}>{t.sidebar.tagline}</p>
-      </div>
-
+    <header className={styles.navbar}>
+      <a href="#hero" className={styles.logo}>
+        Alejandra
+      </a>
       <nav className={styles.nav}>
         <ul>
           {NAV_LINKS.map((link) => (
@@ -29,20 +23,15 @@ function Sidebar() {
                   activeSection === link.href ? styles.active : undefined
                 }
               >
-                <span className={styles.navNumber}>{link.number}.</span>
                 {t.nav[link.key]}
               </a>
             </li>
           ))}
         </ul>
       </nav>
-
-      <div className={styles.footer}>
-        <SocialIcons className={styles.social} />
-        <LanguageToggle />
-      </div>
+      <LanguageToggle className={styles.languageToggle} />
     </header>
   )
 }
 
-export default Sidebar
+export default MobileNavbar

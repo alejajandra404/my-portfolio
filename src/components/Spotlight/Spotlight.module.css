@@ -1,0 +1,17 @@
+.spotlight {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    600px circle at var(--x, 50%) var(--y, 50%),
+    var(--color-burgundy-dim),
+    transparent 70%
+  );
+}
+
+@media (max-width: 900px), (hover: none) {
+  .spotlight {
+    display: none;
+  }
+}
